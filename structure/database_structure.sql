@@ -1,9 +1,8 @@
--- CREACION DEL ESQUEMA Y TABLAS
--- JORGE JARA
--- CODERHOUSE COMISION 53175
+DROP DATABASE IF EXISTS motelapp;
 
-CREATE SCHEMA IF NOT EXISTS `motelapp` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `motelapp`;
+CREATE DATABASE motelapp;
+
+USE motelapp;
 
 -- Tabla CLIENTEESTADO
 CREATE TABLE IF NOT EXISTS `CLIENTEESTADO` (
@@ -125,9 +124,9 @@ CREATE TABLE IF NOT EXISTS `PAGO` (
 
 
 -- Tabla CLIENTELOGS
-CREATE TABLE clientelogs (
-    accion VARCHAR(10),
-    id_cliente VARCHAR(15),
-    nombre_cliente VARCHAR(50),
-    fecha_hora TIMESTAMP
-);
+--CREATE TABLE clientelogs (
+ --   accion VARCHAR(10),
+--    id_cliente VARCHAR(15),
+--    nombre_cliente VARCHAR(50),
+--    fecha_hora TIMESTAMP
+--);
