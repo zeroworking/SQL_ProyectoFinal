@@ -14,8 +14,8 @@ BEGIN
     DECLARE total INT;
     SELECT SUM(VALORRESERVA) INTO total FROM reserva WHERE id_cliente = cliente_id;
     RETURN total;
-END;
-// DELIMITER ;
+END //
+DELIMITER ;
 
 --SELECT TotalPagosCliente('CLI005');
 --DROP FUNCTION TotalPagosCliente;
