@@ -1,4 +1,4 @@
-USE coderhouse_generico;
+USE motelapp;
 
 DROP PROCEDURE IF EXISTS ReservasAnuladas;
 DROP PROCEDURE IF EXISTS EstadisticaMensualMoteles;

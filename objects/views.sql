@@ -2,7 +2,7 @@ USE motelapp;
 
 
 -- VISTA 1 CLIENTES CUMPLEAÑEROS DEL MES
-CREATE OR REPLACE VIEW ClientesDeCumpleañosMesActual AS
+CREATE OR REPLACE VIEW ClientesDeCumpleanosMesActual AS
 (SELECT
     cliente.NOMBRE,
     cliente.EMAIL,
