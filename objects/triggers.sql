@@ -5,36 +5,34 @@ USE motelapp;
 DELIMITER //
 -- Trigger para inserción
 CREATE TRIGGER trigger_cliente_insert
-AFTER INSERT ON cliente
+AFTER INSERT ON CLIENTE
 FOR EACH ROW
 BEGIN
-    INSERT INTO clientelogs (accion, id_cliente, nombre_cliente, fecha_hora)
-    VALUES ('INSERT', NEW.id_cliente, NEW.nombre, CURRENT_TIMESTAMP);
-END;
-//
+    INSERT INTO CLIENTELOGS (ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA)
+    VALUES ('INSERT', NEW.ID_CLIENTE, NEW.NOMBRE, CURRENT_TIMESTAMP);
+END //
+DELIMITER ;
+
 
 -- Trigger para actualización
+DELIMITER //
 CREATE TRIGGER trigger_cliente_update
-AFTER UPDATE ON cliente
+AFTER UPDATE ON CLIENTE
 FOR EACH ROW
 BEGIN
-    INSERT INTO clientelogs (accion, id_cliente, nombre_cliente, fecha_hora)
-    VALUES ('UPDATE', NEW.id_cliente, NEW.nombre, CURRENT_TIMESTAMP);
-END;
-//
+    INSERT INTO CLIENTELOGS (ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA)
+    VALUES ('UPDATE', NEW.ID_CLIENTE, NEW.NOMBRE, CURRENT_TIMESTAMP);
+END //
+DELIMITER ;
+
 
 -- Trigger para eliminación
+DELIMITER //
 CREATE TRIGGER trigger_cliente_delete
-AFTER DELETE ON cliente
+AFTER DELETE ON CLIENTE
 FOR EACH ROW
 BEGIN
-    INSERT INTO clientelogs (accion, id_cliente, nombre_cliente, fecha_hora)
-    VALUES ('DELETE', OLD.id_cliente, OLD.nombre, CURRENT_TIMESTAMP);
-END;
-// DELIMITER ;
-
-
-
-
-
-
+    INSERT INTO CLIENTELOGS (ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA)
+    VALUES ('DELETE', OLD.ID_CLIENTE, OLD.NOMBRE, CURRENT_TIMESTAMP);
+END //
+DELIMITER ;
