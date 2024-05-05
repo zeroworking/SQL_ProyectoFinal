@@ -127,14 +127,5 @@ CREATE TABLE IF NOT EXISTS `clientelogs` (
   `accion` VARCHAR(10) NOT NULL,
   `id_cliente` VARCHAR(15) NOT NULL,
   `nombre_cliente` VARCHAR(50) NOT NULL,
-  `fecha_hora` TIMESTAMP NOT NULL,
+  `fecha_hora` TIMESTAMP NOT NULL
 );
-
-
-
---CREATE TABLE clientelogs (
---    accion VARCHAR(10),
---   id_cliente VARCHAR(15),
---    nombre_cliente VARCHAR(50),
---    fecha_hora TIMESTAMP
---);
