@@ -2,8 +2,8 @@ USE mysql;
 
 -- CREATE USER IF NOT EXISTS
 CREATE USER IF NOT EXISTS 'superadmin'@'%' IDENTIFIED BY 'password';
-CREATE USER 'usuario_select'@'%' IDENTIFIED BY 'password_select';
-CREATE USER 'usuario_crud'@'%' IDENTIFIED BY 'password_crud';
+CREATE USER IF NOT EXISTS 'usuario_select'@'%' IDENTIFIED BY 'password_select';
+CREATE USER IF NOT EXISTS 'usuario_crud'@'%' IDENTIFIED BY 'password_crud';
 
 
 -- GRANT ALL PRIVILEGES ON motelapp.* TO 'superadmin'@'%'
@@ -20,7 +20,7 @@ CREATE ROLE role_crud_moteles;
 
 -- ASIGNACIÓN DE PRIVILEGIOS AL ROL role_select_vistas
 GRANT SELECT ON MOTEL TO role_select_vistas;
--- GRANT SELECT ON DUENO TO role_select_vistas;
+--GRANT SELECT ON DUENO TO role_select_vistas;
 GRANT SELECT ON HABITACION TO role_select_vistas;
 GRANT SELECT ON HABITACIONESTADO TO role_select_vistas;
 GRANT SELECT ON HABITACIONVALORES TO role_select_vistas;
@@ -37,7 +37,7 @@ GRANT SELECT ON CLIENTELOGS TO role_select_vistas;
 
 -- ASIGNACIÓN DE PRIVILEGIOS AL ROL role_crud_moteles
 GRANT ALL PRIVILEGES ON MOTEL TO role_crud_moteles;
--- GRANT ALL PRIVILEGES ON DUENO TO role_crud_moteles;
+--GRANT ALL PRIVILEGES ON DUENO TO role_crud_moteles;
 GRANT ALL PRIVILEGES ON HABITACION TO role_crud_moteles;
 GRANT ALL PRIVILEGES ON HABITACIONESTADO TO role_crud_moteles;
 GRANT ALL PRIVILEGES ON HABITACIONVALORES TO role_crud_moteles;
