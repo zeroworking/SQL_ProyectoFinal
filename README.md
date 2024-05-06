@@ -101,15 +101,16 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 
 **Columnas:**
 
-* **IDMesa:** Identificador único de la mesa
-* **Capacidad:** Número de personas que la mesa puede acomodar
-* **TotalReservas:** Número total de reservas realizadas para la mesa
+* **ID_CLIENTE:** Id del cliente
+* **NUMEROVISITAS:** Número de visitas del cliente en el año
+* **NOMBRE:** Nombre del cliente
+* **EMAIL:** Email del cliente
+* **DESCRIPCION:** Estado del cliente (solo clientes activos)
 
 **Ejemplo de consulta:**
 
 ```sql
-SELECT * FROM ReservasPorMesa
-ORDER BY TotalReservas DESC;
+SELECT * FROM ClientesTopReservasAnual;
 ```
 
 ### Vista: CancelacionesPorTipoReserva
