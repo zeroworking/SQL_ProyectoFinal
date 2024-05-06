@@ -287,6 +287,12 @@ CALL ReservasAnuladas();
 
 
 
+
+
+
+
+
+
 ### Procedimiento: actualizar_tipo_reserva_por_email
 
 **Descripción:** Este procedimiento actualiza el tipo de reserva de la última reserva realizada por un cliente a partir de su correo electrónico.
@@ -306,26 +312,12 @@ CALL ReservasAnuladas();
 CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo');
 ```
 
-### Procedimiento: crear_empleado
 
-**Descripción:** Este procedimiento crea un nuevo empleado en la base de datos.
 
-**Parámetros:**
 
-* **p_nombre:** Nombre del empleado
-* **p_telefono:** Teléfono del empleado
-* **p_correo:** Correo electrónico del empleado
-* **p_id_restaurante:** Identificador del restaurante al que pertenece el empleado
 
-**Retorno:**
 
-* Mensaje de éxito o error
 
-**Ejemplo de uso:**
-
-```sql
-CALL crear_empleado('Juan Pérez', '123456789', 'juan.perez@ejemplo.com', 1);
-```
 
 ## Roles y permisos
 `./objects/roles_users.sql`
