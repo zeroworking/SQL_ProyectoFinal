@@ -247,25 +247,45 @@ SELECT ObtenerNombreCliente('RES5792586');
 
 
 
+
+
+
+
+
+
+
+
 ## Documentación de Procedimientos Almacenados
 
-### Procedimiento: actualizar_reserva_cancelada_por_email
+### Procedimiento: ReservasAnuladas
 
-**Descripción:** Este procedimiento actualiza una reserva cancelada para un cliente a partir de su correo electrónico.
+**Descripción:** Retorna listado histórico de reservas anuladas.
 
 **Parámetros:**
 
-* **p_email:** Correo electrónico del cliente
+* No utiliza
 
 **Retorno:**
+**Columnas:**
 
-* Mensaje de éxito o error
+* **ID_CLIENTE:** Id del cliente
+* **ID_RESERVA:** Identificador de la reserva
+* **VALORRESERVA:** Valor pagado por la reserva
+* **FECHA:** Fecha de la reserva
+* **NOMBRE_CLIENTE:** Nombre del cliente
+* **NOMBRE_HABITACION:** Nombre de la habitación
+* **NOMBRE_MOTEL:** Nombre del motel
 
 **Ejemplo de uso:**
 
 ```sql
-CALL actualizar_reserva_cancelada_por_email('ejemplo@correo.com');
+CALL ReservasAnuladas();
 ```
+
+
+
+
+
 
 ### Procedimiento: actualizar_tipo_reserva_por_email
 
