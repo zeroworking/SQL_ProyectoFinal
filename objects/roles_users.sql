@@ -2,9 +2,13 @@ USE mysql;
 
 -- CREATE USER IF NOT EXISTS
 CREATE USER IF NOT EXISTS 'superadmin'@'%' IDENTIFIED BY 'password';
+CREATE USER 'usuario_select'@'%' IDENTIFIED BY 'password_select';
+CREATE USER 'usuario_crud'@'%' IDENTIFIED BY 'password_crud';
+
 
 -- GRANT ALL PRIVILEGES ON motelapp.* TO 'superadmin'@'%'
 GRANT ALL PRIVILEGES ON motelapp.* TO 'superadmin'@'%' WITH GRANT OPTION;
+
 
 FLUSH PRIVILEGES;
 
@@ -31,7 +35,6 @@ GRANT SELECT ON CLIENTEESTADO TO role_select_vistas;
 GRANT SELECT ON CLIENTELOGS TO role_select_vistas;
 
 
-
 -- ASIGNACIÓN DE PRIVILEGIOS AL ROL role_crud_moteles
 GRANT ALL PRIVILEGES ON MOTEL TO role_crud_moteles;
 --GRANT ALL PRIVILEGES ON DUENO TO role_crud_moteles;
@@ -41,11 +44,8 @@ GRANT ALL PRIVILEGES ON HABITACIONVALORES TO role_crud_moteles;
 
 
 
--- CREACIÓN DE USUARIOS Y ASIGNACIÓN A ROLES
-CREATE USER 'usuario_select'@'%' IDENTIFIED BY 'password_select';
+-- ASIGNACIÓN A ROLES
 GRANT role_select_vistas TO 'usuario_select'@'%';
-
-CREATE USER 'usuario_crud'@'%' IDENTIFIED BY 'password_crud';
 GRANT role_crud_moteles TO 'usuario_crud'@'%';
 
 FLUSH PRIVILEGES;
