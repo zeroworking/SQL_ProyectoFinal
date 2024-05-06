@@ -132,7 +132,7 @@ SELECT * FROM ClientesTopReservasAnual;
 
 **Retorno:**
 
-* **INT** cantidad de dinero pagada por concepto de reservas del cliente
+* Cantidad de dinero pagada por concepto de reservas del cliente
 
 **Ejemplo de uso:**
 
@@ -144,45 +144,34 @@ SELECT TotalPagosCliente('CLI005');
 
 
 
-### Función: contar_reservas_cliente
+### Función: ObtenerNombreCliente
 
-**Descripción:** Esta función cuenta la cantidad de reservas realizadas por un cliente en un intervalo de tiempo.
+**Descripción:** Retorna el nombre del cliente asociado a una reserva especifica.
 
 **Parámetros:**
 
-* **cliente_id:** Identificador único del cliente
-* **fecha_inicio:** Fecha de inicio del intervalo (formato YYYY-MM-DD)
-* **fecha_fin:** Fecha de fin del intervalo (formato YYYY-MM-DD)
+* **ID_RESERVA:** Número identificador de la reserva
 
 **Retorno:**
 
-* Número total de reservas realizadas por el cliente en el intervalo de tiempo especificado
+* Nombre del cliente vinculado a la reserva
 
 **Ejemplo de uso:**
 
 ```sql
-SELECT contar_reservas_cliente(5, '2023-12-01', '2023-12-31');
+SELECT ObtenerNombreCliente('RES5792586');
 ```
 
-**Nota:** La función no toma en cuenta las cancelaciones de reservas.
 
-### Función: cantidad_mesas_por_restaurante
 
-**Descripción:** Esta función devuelve la cantidad de mesas que tiene un restaurante.
 
-**Parámetros:**
 
-* **restaurante_id:** Identificador único del restaurante
 
-**Retorno:**
 
-* Número total de mesas del restaurante
 
-**Ejemplo de uso:**
 
-```sql
-SELECT cantidad_mesas_por_restaurante(2);
-```
+
+
 
 ## Documentación de Triggers
 
