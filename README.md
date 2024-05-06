@@ -56,13 +56,13 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, la mesa reservada, el empleado que atendió la reserva y el tipo de reserva.
 
 
-## Diagrama entidad relacion (DER)
+## Diagrama entidad relación (DER)
 
 <center>
 <img src="./img/mer.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
-## Listado de tablas y descripcion
+## Listado de tablas y descripción
 
 <center>
 <img src="./img/tablas.png" style="width: 100% ; aspect-ratio:16/9">
