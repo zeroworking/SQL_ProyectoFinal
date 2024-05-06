@@ -4,9 +4,6 @@
 
 
 
-<center>
-<img src="./img/mer.jpg" style="width: 100% ; aspect-ratio:16/9">
-</center>
 
 
 # <center>Entrega de proyecto final</center>
@@ -61,8 +58,12 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 ## Diagrama entidad relacion (DER)
 
-
+<center>
+<img src="./img/mer.jpg" style="width: 100% ; aspect-ratio:16/9">
+</center>
 ```
+
+
 
 +-------------+
 | TIPORESERVA |
