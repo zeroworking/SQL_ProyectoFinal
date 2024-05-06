@@ -113,18 +113,6 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 SELECT * FROM ClientesTopReservasAnual;
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Documentación de Funciones
 
 ### Función: TotalPagosCliente
@@ -145,10 +133,6 @@ SELECT * FROM ClientesTopReservasAnual;
 SELECT TotalPagosCliente('CLI005');
 ```
 
-
-
-
-
 ### Función: ObtenerNombreCliente
 
 **Descripción:** Retorna el nombre del cliente asociado a una reserva especifica.
@@ -167,22 +151,6 @@ SELECT TotalPagosCliente('CLI005');
 SELECT ObtenerNombreCliente('RES5792586');
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Documentación de Triggers
 
 ### Trigger: trigger_cliente_insert
@@ -200,10 +168,6 @@ SELECT ObtenerNombreCliente('RES5792586');
 * Se inserta un nuevo cliente.
 * El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
 
-
-
-
-
 ### Trigger: trigger_cliente_update
 
 **Descripción:** Este trigger registra la modificación de un nuevo cliente en la tabla CLIENTE
@@ -220,9 +184,6 @@ SELECT ObtenerNombreCliente('RES5792586');
 * El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
 
 
-
-
-
 ### Trigger: trigger_cliente_delete
 
 **Descripción:** Este trigger registra la eliminación de un cliente en la tabla CLIENTE
@@ -237,23 +198,6 @@ SELECT ObtenerNombreCliente('RES5792586');
 
 * Se elimina un cliente.
 * El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Documentación de Procedimientos Almacenados
 
@@ -282,41 +226,27 @@ SELECT ObtenerNombreCliente('RES5792586');
 CALL ReservasAnuladas();
 ```
 
+### Procedimiento: EstadisticaMensualMoteles
 
-
-
-
-
-
-
-
-
-
-
-### Procedimiento: actualizar_tipo_reserva_por_email
-
-**Descripción:** Este procedimiento actualiza el tipo de reserva de la última reserva realizada por un cliente a partir de su correo electrónico.
+**Descripción:** Retorna el número total de reservas efectivas y el monto recaudado por cada motel al mes.
 
 **Parámetros:**
 
-* **p_email:** Correo electrónico del cliente
-* **p_nuevo_tipo:** Nuevo tipo de reserva
+* **RESERVA.FECHA** Hardcodeado a mes = 1 para mostrar resultados contenidos en la BD
 
-**Retorno:**
+**Columnas:**
 
-* Mensaje de éxito o error
+* **ID_MOTEL:** Identificador del motel
+* **NOMBRE:** Nombre del motel
+* **CANTIDAD_REERVAS:** Cantidad de reservas en el mes
+* **TOTAL_VALOR_RESERVAS:** Total dinero recaudado por reservas en el mes
+* **DESCRIPCION:** Estado de la reserva (solo confirmadas)
 
 **Ejemplo de uso:**
 
 ```sql
-CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo');
+CALL EstadisticaMensualMoteles();
 ```
-
-
-
-
-
-
 
 
 ## Roles y permisos
@@ -326,9 +256,8 @@ Se genera tres roles:
 
 1. `role_select_vistas`: Este rol tiene permisos solo para SELECT en las vistas.
 2. `role_crud_restaurantes`: Este rol tiene permisos para generar CRUD en las tablas relacionadas con restaurantes.
-3. `role_creacion_usuarios`: Este rol tiene permisos para crear y eliminar usuarios.
 
-Además, crea dos usuarios por cada rol y les asigna los roles correspondientes.
+Crea un usuario por cada rol y le asigna los roles correspondientes.
 
 ## Back up de la base de datos
 
