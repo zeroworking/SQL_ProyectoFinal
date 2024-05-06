@@ -71,6 +71,10 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 ## Listado de tablas y descripcion
 
+<center>
+<img src="./img/tablas.jpg" style="width: 100% ; aspect-ratio:16/9">
+</center>
+
 | Tabla         | Columna           | Tipo de Datos                         |
 | ------------- | ----------------- |                                  ---: |
 | RESERVA       | IDRESERVA         | INT                                   |
