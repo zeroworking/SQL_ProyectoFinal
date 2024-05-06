@@ -113,43 +113,36 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 SELECT * FROM ClientesTopReservasAnual;
 ```
 
-### Vista: CancelacionesPorTipoReserva
 
-**Descripción:** Esta vista muestra la cantidad de cancelaciones para cada tipo de reserva.
 
-**Columnas:**
 
-* **Tipo:** Tipo de reserva (ej. "Normal", "Grupal", etc.)
-* **TotalCancelaciones:** Número total de cancelaciones para el tipo de reserva
 
-**Ejemplo de consulta:**
 
-```sql
-SELECT * FROM CancelacionesPorTipoReserva
-ORDER BY TotalCancelaciones DESC;
-```
+
 
 ## Documentación de Funciones
 
-### Función: mesa_cancelada
+### Función: TotalPagosCliente
 
-**Descripción:** Esta función verifica si una mesa está cancelada para una reserva.
+**Descripción:** Retorna el valor total de pagos recibidos por concepto de reservas de motel para un cliente especifico.
 
 **Parámetros:**
 
-* **mesa_id:** Identificador único de la mesa
+* **CLIENTE_ID:** Identificador del cliente
 
 **Retorno:**
 
-* **TRUE** si la mesa está cancelada para alguna reserva, **FALSE** en caso contrario
+* **INT** cantidad de dinero pagada por concepto de reservas del cliente
 
 **Ejemplo de uso:**
 
 ```sql
-SELECT mesa_cancelada(10);
+SELECT TotalPagosCliente('CLI005');
 ```
 
-**Nota:** La función solo verifica si la mesa está cancelada para alguna reserva. No indica si la mesa está disponible para una nueva reserva en este momento.
+
+
+
 
 ### Función: contar_reservas_cliente
 
