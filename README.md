@@ -95,9 +95,9 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 SELECT * FROM ClientesDeCumpleanosMesActual;
 ```
 
-### Vista: ReservasPorMesa
+### Vista: ClientesTopReservasAnual 
 
-**Descripción:** Esta vista muestra la cantidad de reservas realizadas para cada mesa, así como la capacidad total de la mesa.
+**Descripción:** Listado de 3 clientes con mayor cantidad de reservaciones en el año en cualquiera de los moteles del sistema.
 
 **Columnas:**
 
