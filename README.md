@@ -76,9 +76,11 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 ## Objetos de la base de datos
 
 ### Documentacion de Vistas
-### Vista: ReservasPorFecha
 
-**Descripción:** Esta vista muestra estadísticas sobre las reservas realizadas en diferentes fechas, como el número total de reservas por día, por semana o por mes.
+
+### Vista: ClientesDeCumpleañosMesActual
+
+**Descripción:** Listado de clientes vigentes que se encuentran de cumpleaños en el mes en curso.
 
 **Columnas:**
 
