@@ -59,7 +59,7 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 ## Diagrama entidad relacion (DER)
 
 <center>
-<img src="./img/mer2.jpg" style="width: 100% ; aspect-ratio:16/9">
+<img src="./img/mer.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
 ```
@@ -72,7 +72,7 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 ## Listado de tablas y descripcion
 
 <center>
-<img src="./img/tablas.jpg" style="width: 100% ; aspect-ratio:16/9">
+<img src="./img/tablas.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
 | Tabla         | Columna           | Tipo de Datos                         |
