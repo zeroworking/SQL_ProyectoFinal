@@ -3,6 +3,12 @@
 </center>
 
 
+
+<center>
+<img src="./img/mer.jpg" style="width: 100% ; aspect-ratio:16/9">
+</center>
+
+
 # <center>Entrega de proyecto final</center>
 @Alumno
 
