@@ -61,108 +61,13 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 <center>
 <img src="./img/mer.jpg" style="width: 100% ; aspect-ratio:16/9">
 </center>
-```
 
 
-
-+-------------+
-| TIPORESERVA |
-+-------------+
-| IDTIPORES PK|
-|    TIPO     |
-+-------------+
-        |
-+-------------------+       +-------------+       +-----------------+      
-|   RESERVA         |       |   CLIENTE   |       |  EMPLEADO       |      
-+-------------------+       +-------------+       +-----------------+      
-| IDRESERVA PK      |       | IDCLIENTE PK|       | IDEMPLEADO PK   |     
-| IDCLIENTE FK      |<------|             |<------|                 |      
-| IDMESA   FK       |<------|             |       | IDRESTAURANTE FK|   
-| IDEMPLEADO FK     |<------|  STATUS     |       |                 |      
-| IDTIPORESERVA FK  |<------| FECHA_ALTA  |       |                 |      
-| FECHA             |       |   NOMBRE    |       |   NOMBRE        |      
-| CANCELACION       |       |  TELEFONO   |       |  TELEFONO       |      
-+-------------------+       |   CORREO    |       |   CORREO        |
-                            +-------------+       +-------------    +
-                                     |                   |
-                                     |                   |
-+-------------+       +-------------    +       +-------------      +       +-------------      +
-|   DUENO     |       | RESTAURANTE     |       |    MESA           |       | RESERVA           |
-+-------------+       +-------------    +       +-------------      +       +-------------      +
-| IDDUENO PK  |       | IDRESTAURANTE PK|       | IDMESA PK         |       | IDRESERVA PK      |
-|             |-----> | IDDUENO FK      |<------| IDRESTAURANTE FK  |-----> | IDCLIENTE FK      |
-| NOMBRE      |       | NOMBRE          |       |   CAPACIDAD       |       | IDMESA FK         |
-| CORREO      |       | DIRECCION       |       | DISPONIBLE        |       | IDEMPLEADO FK     |
-| TELEFONO    |       | TELEFONO        |       +-------------      +       | IDTIPORESERVA FK  |
-+-------------+       |                 |                                   | FECHA             |
-                       +-------------   +                                   | CANCELACION       |
-                                                                            +-------------      +
-
-```
 
 
 
 ## Listado de tablas y descripcion
 
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| RESERVA       | IDRESERVA         | INT                                   |
-|               | IDCLIENTE         | INT                                   |
-|               | IDMESA            | INT                                   |
-|               | IDEMPLEADO        | INT                                   |
-|               | IDTIPORESERVA     | INT                                   |
-|               | FECHA             | DATETIME                              |
-|               | CANCELACION       | DATETIME                              |
-
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| CLIENTE       | IDCLIENTE         | INT                                   |
-|               | NOMBRE            | VARCHAR(100) DEFAULT 'USUARIO_UNKNOW' |
-|               | TELEFONO          | VARCHAR(20) NOT NULL                  |
-|               | CORREO            | VARCHAR(100) UNIQUE NOT NULL          |
-
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| EMPLEADO      | IDEMPLEADO        | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-|               | CORREO            | VARCHAR(100)                          |
-|               | IDRESTAURANTE     | INT                                   |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| DUENO         | IDDUENO           | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | CORREO            | VARCHAR(100)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| TIPORESERVA   | IDTIPORESERVA     | INT                                   |
-|               | TIPO              | VARCHAR(50)                           |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| RESTAURANTE   | IDRESTAURANTE     | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | DIRECCION         | VARCHAR(255)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-|               | IDDUENO           | INT                                   |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| MESA          | IDMESA            | INT                                   |
-|               | IDRESTAURANTE     | INT                                   |
-|               | CAPACIDAD         | INT                                   |
-|               | DISPONIBLE        | BOOLEAN                               |
 
 
 ## Estructura e ingesta de datos
