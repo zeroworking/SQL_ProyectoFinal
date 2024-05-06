@@ -92,9 +92,7 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 **Ejemplo de consulta:**
 
 ```sql
-SELECT * FROM ReservasPorFecha
-WHERE Fecha BETWEEN '2010-12-01' AND '2023-12-31'
-ORDER BY Fecha ASC;
+SELECT * FROM ClientesDeCumpleanosMesActual;
 ```
 
 ### Vista: ReservasPorMesa
