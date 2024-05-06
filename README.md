@@ -62,86 +62,18 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 <img src="./img/mer.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
-```
-
-
-```
-
-
-
 ## Listado de tablas y descripcion
 
 <center>
 <img src="./img/tablas.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| RESERVA       | IDRESERVA         | INT                                   |
-|               | IDCLIENTE         | INT                                   |
-|               | IDMESA            | INT                                   |
-|               | IDEMPLEADO        | INT                                   |
-|               | IDTIPORESERVA     | INT                                   |
-|               | FECHA             | DATETIME                              |
-|               | CANCELACION       | DATETIME                              |
-
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| CLIENTE       | IDCLIENTE         | INT                                   |
-|               | NOMBRE            | VARCHAR(100) DEFAULT 'USUARIO_UNKNOW' |
-|               | TELEFONO          | VARCHAR(20) NOT NULL                  |
-|               | CORREO            | VARCHAR(100) UNIQUE NOT NULL          |
-
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| EMPLEADO      | IDEMPLEADO        | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-|               | CORREO            | VARCHAR(100)                          |
-|               | IDRESTAURANTE     | INT                                   |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| DUENO         | IDDUENO           | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | CORREO            | VARCHAR(100)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| TIPORESERVA   | IDTIPORESERVA     | INT                                   |
-|               | TIPO              | VARCHAR(50)                           |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| RESTAURANTE   | IDRESTAURANTE     | INT                                   |
-|               | NOMBRE            | VARCHAR(100)                          |
-|               | DIRECCION         | VARCHAR(255)                          |
-|               | TELEFONO          | VARCHAR(20)                           |
-|               | IDDUENO           | INT                                   |
-
-
-| Tabla         | Columna           | Tipo de Datos                         |
-| ------------- | ----------------- |                                  ---: |
-| MESA          | IDMESA            | INT                                   |
-|               | IDRESTAURANTE     | INT                                   |
-|               | CAPACIDAD         | INT                                   |
-|               | DISPONIBLE        | BOOLEAN                               |
-
-
 ## Estructura e ingesta de datos
-* Se realiza principalmente por medio del archivo population.sql
-* La carga de la tabla reserva se realiza por medio de un csv colocado en el directorio ./structure/data-csv
+* La estructura se realiza por medio del archivo database_structure.sql.
+* La ingesta de datos se realiza por medio del archivo population.sql
+
 
 ## Objetos de la base de datos
-
 
 ### Documentacion de Vistas
 ### Vista: ReservasPorFecha
