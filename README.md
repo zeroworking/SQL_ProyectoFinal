@@ -120,6 +120,11 @@ SELECT * FROM ClientesTopReservasAnual;
 
 
 
+
+
+
+
+
 ## Documentación de Funciones
 
 ### Función: TotalPagosCliente
@@ -173,67 +178,73 @@ SELECT ObtenerNombreCliente('RES5792586');
 
 
 
+
+
+
+
+
 ## Documentación de Triggers
 
-### Trigger: after_insert_trigger
+### Trigger: trigger_cliente_insert
 
-**Descripción:** Este trigger registra la inserción de un nuevo cliente en la tabla LOG_CAMBIOS.
+**Descripción:** Este trigger registra la inserción de un nuevo cliente en la tabla CLIENTE
 
 **Detalles:**
 
-* **Tabla afectada:** CLIENTE
+* **Tabla afectada:** CLIENTELOGS
 * **Acción:** INSERT
-* **Información registrada:** Fecha, ID del cliente, Usuario
+* **Información registrada:** ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA
 
 **Ejemplo:**
 
 * Se inserta un nuevo cliente.
-* El trigger registra la acción en la tabla LOG_CAMBIOS con los detalles correspondientes.
+* El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
 
-### Trigger: after_update_cancelacion_trigger
 
-**Descripción:** Este trigger registra la cancelación de una reserva en la tabla LOG_CAMBIOS.
 
-**Detalles:**
 
-* **Tabla afectada:** RESERVA
-* **Acción:** CANCELACION
-* **Información registrada:** Fecha, ID del cliente (si se conoce), Usuario
 
-**Ejemplo:**
+### Trigger: trigger_cliente_update
 
-* Se actualiza una reserva para indicar su cancelación.
-* Si la cancelación no estaba presente antes, el trigger registra la acción en la tabla LOG_CAMBIOS.
-
-### Trigger: before_insert_cliente_trigger
-
-**Descripción:** Este trigger verifica si el correo electrónico de un nuevo cliente ya está en uso.
+**Descripción:** Este trigger registra la modificación de un nuevo cliente en la tabla CLIENTE
 
 **Detalles:**
 
-* **Tabla afectada:** CLIENTE
-* **Acción:** INSERT
-* **Validación:** Correo electrónico único
+* **Tabla afectada:** CLIENTELOGS
+* **Acción:** UPDATE
+* **Información registrada:** ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA
 
 **Ejemplo:**
 
-* Se intenta insertar un nuevo cliente con un correo electrónico ya registrado.
-* El trigger genera un error y la inserción no se realiza.
+* Se modifica un cliente.
+* El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
 
-### Trigger: before_insert_reserva_trigger
 
-**Descripción:** Este trigger verifica si un cliente ya tiene una reserva en la misma hora y mesa.
+
+
+
+### Trigger: trigger_cliente_delete
+
+**Descripción:** Este trigger registra la eliminación de un cliente en la tabla CLIENTE
 
 **Detalles:**
 
-* **Tabla afectada:** RESERVA
-* **Acción:** INSERT
-* **Validación:** No se permiten reservas duplicadas en la misma hora y mesa para un mismo cliente.
+* **Tabla afectada:** CLIENTELOGS
+* **Acción:** DELETE
+* **Información registrada:** ACCION, ID_CLIENTE, NOMBRE_CLIENTE, FECHA_HORA
 
 **Ejemplo:**
 
-* Se intenta reservar una mesa para un cliente que ya tiene una reserva en la misma hora y mesa.
-* El trigger genera un error y la reserva no se realiza.
+* Se elimina un cliente.
+* El trigger registra la acción en la tabla CLIENTELOGS con los detalles correspondientes.
+
+
+
+
+
+
+
+
 
 
 ## Documentación de Procedimientos Almacenados
