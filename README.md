@@ -7,13 +7,13 @@
 
 
 # <center>Entrega de proyecto final</center>
-@Alumno
+Alumno  : Jorge Jara
 
-@Comision
+Comisión    : 53175
 
-@Tutor
+@Tutor  : Jonatan Canchi
 
-@Docente
+@Docente    : Michel Anderson
 
 
 
