@@ -11,9 +11,9 @@ Alumno  : Jorge Jara
 
 Comisión    : 53175
 
-@Tutor  : Jonatan Canchi
+Tutor  : Jonatan Canchi
 
-@Docente    : Michel Anderson
+Docente    : Michel Anderson
 
 
 
