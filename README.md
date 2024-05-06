@@ -84,8 +84,10 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 **Columnas:**
 
-* **Fecha:** Fecha de la reserva (formato YYYY-MM-DD)
-* **TotalReservas:** Número total de reservas realizadas en la fecha indicada
+* **NOMBRE:** Nombre del cliente
+* **EMAIL:** Email del cliente
+* **FECHANACIMIENTO:** Fecha de nacimiento del cliente
+* **DESCRIPCION:** Estado del cliente (solo clientes activos)
 
 **Ejemplo de consulta:**
 
