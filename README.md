@@ -53,7 +53,7 @@ Para lograr este propósito, se realizará un exhaustivo análisis de los requis
 
 Este proyecto no solo busca ofrecer una solución técnica eficaz, sino también contribuir al desarrollo y modernización del sector de hospedaje en Santiago, promoviendo estándares de calidad y eficiencia que beneficien tanto a los establecimientos como a los visitantes de la ciudad.
 
-## Tematica del proyecto
+## Temática del proyecto
 
 Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante el modelamiento de una base de datos que permita manejar todas las operaciones relacionadas con las reservas de manera óptima.
 
