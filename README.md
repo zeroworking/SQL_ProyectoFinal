@@ -8,14 +8,9 @@
 
 # <center>Entrega de proyecto final</center>
 Alumno  : Jorge Jara
-
 Comisión    : 53175
-
 Tutor  : Jonatan Canchi
-
 Docente    : Michel Anderson
-
-
 
 ---
 
@@ -270,7 +265,6 @@ Se puede generar un comando en el archivo `make backup` que me permite ejecutar 
 * Docker (para generar un container)
 * MySQL (Motor de bases de datos `version: latest`)
 * MySQL Workbench (Interfaz grafica)
-* Mockaroo (para otorgar datos ficticios)
 
 ## Como levantar el proyecto en CodeSpaces GitHub
 * env: Archivo con contraseñas y data secretas
@@ -281,7 +275,7 @@ Se puede generar un comando en el archivo `make backup` que me permite ejecutar 
 
 * En la terminal de linux escribir :
     - `make` _si te da un error de que no conexion al socket, volver al correr el comando `make`_
-    - `make clean-db` limpiar la base de datos
+    - `make clean-db` para limpiar la base de datos
     - `make test-db` para mirar los datos de cada tabla
     - `make backup-db` para realizar un backup de mi base de datos
-    - `make access-db` para acceder a la base de datos# SQL_ProyectoFinal
+    - `make access-db` para acceder a la base de datos mediante un instancia de terminal de mysql
