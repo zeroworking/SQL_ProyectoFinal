@@ -74,6 +74,10 @@ Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante 
 <img src="./img/modelo.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
+<center>
+<img src="./img/mer.png" style="width: 100% ; aspect-ratio:16/9">
+</center>
+
 ## Listado de tablas y descripción
 
 <center>
