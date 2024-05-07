@@ -252,7 +252,7 @@ CALL ReservasAnuladas();
 
 * **ID_MOTEL:** Identificador del motel
 * **NOMBRE:** Nombre del motel
-* **CANTIDAD_REERVAS:** Cantidad de reservas en el mes
+* **CANTIDAD_RESERVAS:** Cantidad de reservas en el mes
 * **TOTAL_VALOR_RESERVAS:** Total dinero recaudado por reservas en el mes
 * **DESCRIPCION:** Estado de la reserva (solo confirmadas)
 
