@@ -8,8 +8,11 @@
 
 # <center>Entrega de proyecto final</center>
 Alumno  : Jorge Jara
+
 Comisión    : 53175
+
 Tutor  : Jonatan Canchi
+
 Docente    : Michel Anderson
 
 ---
