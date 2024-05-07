@@ -5,28 +5,51 @@ INSERT INTO MEDIODEPAGO
 (1, 'Transferencia'),
 (2, 'Webpay');
 
+INSERT INTO DUENO
+(ID_DUENO, NOMBRE, CORREO, TELEFONO) VALUES
+('15467731','JORGE','JORGE@MOTELAPP.CL','962361668'),
+('15467732','PEDRO','PEDRO@MOTELAPP.CL','962361668'),
+('15467733','JUAN','JUAN@MOTELAPP.CL','962361668'),
+('15467734','JOSE','JOSE@MOTELAPP.CL','962361668'),
+('15467735','MARIA','MARIA@MOTELAPP.CL','962361668'),
+('15467736','PATRICIA','PATRICIA@MOTELAPP.CL','962361668'),
+('15467737','RENE','RENE@MOTELAPP.CL','962361668'),
+('15467738','JUANA','JUANA@MOTELAPP.CL','962361668'),
+('15467739','OSVALDO','OSVALDO@MOTELAPP.CL','962361668'),
+('15467740','CARLOS','CARLOS@MOTELAPP.CL','962361668'),
+('15467741','RODRIGO','RODRIGO@MOTELAPP.CL','962361668'),
+('15467742','CARMEN','CARMEN@MOTELAPP.CL','962361668'),
+('15467743','ROSA','ROSA@MOTELAPP.CL','962361668'),
+('15467744','CARLA','CARLA@MOTELAPP.CL','962361668'),
+('15467745','CATALINA','CATALINA@MOTELAPP.CL','962361668'),
+('15467746','ANTONIO','ANTONIO@MOTELAPP.CL','962361668'),
+('15467747','GABRIEL','GABRIEL@MOTELAPP.CL','962361668'),
+('15467748','LUZ','LUZ@MOTELAPP.CL','962361668'),
+('15467749','RICARDO','RICARDO@MOTELAPP.CL','962361668'),
+('15467750','ANGEL','ANGEL@MOTELAPP.CL','962361668');
+
 INSERT INTO MOTEL
-(ID_MOTEL, NOMBRE, DIRECCION, TELEFONO) VALUES
-('MOTEL001', 'El Oasis', 'Avenida Providencia 1234 - Providencia', '220594837'),
-('MOTEL002', 'Luna de Miel', 'Calle Las Condes 5678 - Las Condes', '221308495'),
-('MOTEL003', 'El Refugio', 'Pasaje Ñuñoa 910 - Ñuñoa', '220976354'),
-('MOTEL004', 'Paraíso Secreto', 'Avenida La Florida 246 - La Florida', '220158473'),
-('MOTEL005', 'La Cabaña', 'Calle Maipú 3456 - Maipú', '222057139'),
-('MOTEL006', 'El Escondite', 'Avenida Pedro de Valdivia 789 - Ñuñoa', '223098457'),
-('MOTEL007', 'Noches de Pasión', 'Pasaje Bellavista 123 - Recoleta', '220635984'),
-('MOTEL008', 'El Rincón del Amor', 'Calle San Miguel 456 - San Miguel', '222670943'),
-('MOTEL009', 'Sueños Prohibidos', 'Avenida Kennedy 7890 - Las Condes', '221840795'),
-('MOTEL010', 'La Posada Romántica', 'Pasaje Puente Alto 321 - Puente Alto', '222405198'),
-('MOTEL011', 'El Encuentro', 'Calle Peñalolén 567 - Peñalolén', '223705819'),
-('MOTEL012', 'El Jardín del Deseo', 'Avenida Colina 890 - Colina', '220974531'),
-('MOTEL013', 'El Mirador', 'Pasaje Providencia 234 - Providencia', '223564098'),
-('MOTEL014', 'Amorío Hotel', 'Calle La Cisterna 678 - La Cisterna', '222630185'),
-('MOTEL015', 'La Morada Intima', 'Avenida Vitacura 9012 - Vitacura', '221783095'),
-('MOTEL016', 'El Refugio del Amante', 'Pasaje Macul 345 - Macul', '222407518'),
-('MOTEL017', 'El Paraíso del Romance', 'Calle La Reina 6789 - La Reina', '220183947'),
-('MOTEL018', 'La Guarida del Amor', 'Avenida San Bernardo 1234 - San Bernardo', '223890745'),
-('MOTEL019', 'El Cielo en la Tierra', 'Pasaje Pudahuel 567 - Pudahuel', '221057634'),
-('MOTEL020', 'La Estancia del Placer', 'Calle La Pintana 890 - La Pintana', '222306579');
+(ID_MOTEL, NOMBRE, DIRECCION, TELEFONO,ID_DUENO) VALUES
+('MOTEL001', 'El Oasis', 'Avenida Providencia 1234 - Providencia', '220594837','15467731'),
+('MOTEL002', 'Luna de Miel', 'Calle Las Condes 5678 - Las Condes', '221308495','15467732'),
+('MOTEL003', 'El Refugio', 'Pasaje Ñuñoa 910 - Ñuñoa', '220976354','15467733'),
+('MOTEL004', 'Paraíso Secreto', 'Avenida La Florida 246 - La Florida', '220158473','15467734'),
+('MOTEL005', 'La Cabaña', 'Calle Maipú 3456 - Maipú', '222057139','15467735'),
+('MOTEL006', 'El Escondite', 'Avenida Pedro de Valdivia 789 - Ñuñoa', '223098457','15467736'),
+('MOTEL007', 'Noches de Pasión', 'Pasaje Bellavista 123 - Recoleta', '220635984','15467737'),
+('MOTEL008', 'El Rincón del Amor', 'Calle San Miguel 456 - San Miguel', '222670943','15467738'),
+('MOTEL009', 'Sueños Prohibidos', 'Avenida Kennedy 7890 - Las Condes', '221840795','15467739'),
+('MOTEL010', 'La Posada Romántica', 'Pasaje Puente Alto 321 - Puente Alto', '222405198','15467740'),
+('MOTEL011', 'El Encuentro', 'Calle Peñalolén 567 - Peñalolén', '223705819','15467741'),
+('MOTEL012', 'El Jardín del Deseo', 'Avenida Colina 890 - Colina', '220974531','15467742'),
+('MOTEL013', 'El Mirador', 'Pasaje Providencia 234 - Providencia', '223564098','15467743'),
+('MOTEL014', 'Amorío Hotel', 'Calle La Cisterna 678 - La Cisterna', '222630185','15467744'),
+('MOTEL015', 'La Morada Intima', 'Avenida Vitacura 9012 - Vitacura', '221783095','15467745'),
+('MOTEL016', 'El Refugio del Amante', 'Pasaje Macul 345 - Macul', '222407518','15467746'),
+('MOTEL017', 'El Paraíso del Romance', 'Calle La Reina 6789 - La Reina', '220183947','15467747'),
+('MOTEL018', 'La Guarida del Amor', 'Avenida San Bernardo 1234 - San Bernardo', '223890745','15467748'),
+('MOTEL019', 'El Cielo en la Tierra', 'Pasaje Pudahuel 567 - Pudahuel', '221057634','15467749'),
+('MOTEL020', 'La Estancia del Placer', 'Calle La Pintana 890 - La Pintana', '222306579','15467750');
 
 INSERT INTO EMPLEADO
 (ID_EMPLEADO, NOMBRE, ID_MOTEL) VALUES
