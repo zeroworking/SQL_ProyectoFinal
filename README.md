@@ -41,6 +41,18 @@ Docente    : Michel Anderson
 
 ---
 
+## Introducción
+
+En el contexto del creciente sector turístico y de hospedaje en la vibrante ciudad de Santiago de Chile, la eficiente gestión de reservas en moteles se ha vuelto fundamental para garantizar una experiencia satisfactoria para los clientes y una operación fluida para los establecimientos. En este proyecto, nos enfocamos en el diseño y modelamiento de una base de datos utilizando MySQL, dirigida específicamente a la gestión de reservas de habitaciones en moteles de Santiago.
+
+## Objetivo
+
+El objetivo principal de este proyecto es desarrollar un sistema de gestión de reservas robusto, que permita a los moteles llevar un registro detallado de las reservas realizadas, disponibilidad de habitaciones, información de clientes y otras variables relevantes para una administración eficiente. Al implementar una base de datos bien estructurada, se busca optimizar procesos, minimizar errores y mejorar la experiencia tanto para los clientes como para el personal encargado de la gestión de reservas.
+
+Para lograr este propósito, se realizará un exhaustivo análisis de los requisitos del sistema, considerando las necesidades específicas de los moteles en cuanto a la gestión de reservas y las características particulares del mercado de hospedaje en Santiago de Chile. A partir de este análisis, se diseñará un modelo de base de datos que refleje de manera precisa la estructura y relaciones entre los diferentes elementos del sistema.
+
+Este proyecto no solo busca ofrecer una solución técnica eficaz, sino también contribuir al desarrollo y modernización del sector de hospedaje en Santiago, promoviendo estándares de calidad y eficiencia que beneficien tanto a los establecimientos como a los visitantes de la ciudad.
+
 ## Tematica del proyecto
 
 Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante el modelamiento de una base de datos que permita manejar todas las operaciones relacionadas con las reservas de manera óptima.
@@ -263,11 +275,11 @@ Crea un usuario por cada rol y le asigna los roles correspondientes.
 
 Se puede generar un comando en el archivo `make backup` que me permite ejecutar un backup de manera manual.
 
-## Herramientas y tecnologias usadas
+## Herramientas y tecnologías usadas
 * Makefile (para generar una interfaz sencilla de procesos)
 * Docker (para generar un container)
 * MySQL (Motor de bases de datos `version: latest`)
-* MySQL Workbench (Interfaz grafica)
+* MySQL Workbench (Interfaz gráfica)
 
 ## Como levantar el proyecto en CodeSpaces GitHub
 * env: Archivo con contraseñas y data secretas
