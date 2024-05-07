@@ -49,9 +49,9 @@ Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante 
 
 1. **Gestión de Clientes y Empleados**: La base de datos debe permitir registrar la informacion de los clientes que realizan las reservas, asi como del trabador responsable de atender y gestionar la reserva de dicho cliente durante su estancia en el motel.
 
-2. **Gestión de Tiempo de Reserva**: La base de datos debe considerar bloques horarios de reserva (3 y 12 horas a lo menos). Gestionar y calcular de manera adecuada reduce los tiempos muertos y disponibiliza la mayor cantidad de tiempo posible cada habitación.
+2. **Gestión de Tiempo de Reserva**: La base de datos debe considerar bloques horarios de reserva (3 y 12 horas a lo menos). Gestionar y calcular de manera adecuada reduce los tiempos muertos y disponibiliza la mayor cantidad de tiempo cada habitación de motel.
 
-3. **Registro de Reservas**: La base de datos debe registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, la habitación reservada, el motel al que pertenece dicha habitacion, el empleado que atendió la reserva, el tipo de reserva, su duración y su valor.
+3. **Registro de Reservas**: La base de datos debe registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, hora de entrada, hora de salida, el cliente que la realizó, la habitación reservada, el motel al que pertenece dicha habitacion, el empleado que atendió la reserva, el tipo de reserva, su duración y su valor.
 
 4. **Registro de Pagos**: La base de datos debe registrar el pago de cada reserva de manera detallada, incluyendo la fecha, el identificador de la reserva, el medio de pago y su valor.
 
