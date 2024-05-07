@@ -45,7 +45,7 @@ Docente    : Michel Anderson
 
 ## Tematica del proyecto
 
-Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante el modelamiento de una base de datos eficiente que permita manejar todas las operaciones relacionadas con las reservas de manera óptima.
+Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante el modelamiento de una base de datos que permita manejar todas las operaciones relacionadas con las reservas de manera óptima.
 
 ## Modelo de negocio
 
