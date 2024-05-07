@@ -246,7 +246,7 @@ CALL ReservasAnuladas();
 
 **Parámetros:**
 
-* **RESERVA.FECHA** Hardcodeado a mes = 1 para mostrar resultados contenidos en la BD
+* **RESERVA.FECHA** Hardcodeado a mes = 1 para mostrar resultados contenidos en la DB
 
 **Columnas:**
 
