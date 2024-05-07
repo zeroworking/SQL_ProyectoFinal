@@ -1,5 +1,5 @@
 <center>
-<img src="./img/coderhouse.jpg" style="width: 100% ; aspect-ratio:16/9">
+<img src="./img/coderhouse.png" style="width: 100% ; aspect-ratio:16/9">
 </center>
 
 
