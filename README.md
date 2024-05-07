@@ -266,33 +266,33 @@ CALL EstadisticaMensualMoteles();
 ## Roles y permisos
 `./objects/roles_users.sql`
 
-Se genera tres roles:
+Se genera dos roles:
 
 1. `role_select_vistas`: Este rol tiene permisos solo para SELECT en las vistas.
-2. `role_crud_restaurantes`: Este rol tiene permisos para generar CRUD en las tablas relacionadas con restaurantes.
+2. `role_crud_moteles`: Este rol tiene permisos para generar CRUD en las tablas relacionadas con moteles.
 
 Crea un usuario por cada rol y le asigna los roles correspondientes.
 
-## Back up de la base de datos
+## Backup de la base de datos
 
-Se puede generar un comando en el archivo `make backup` que me permite ejecutar un backup de manera manual.
+Se puede generar un respaldo en el directorio backup con el comando `make backup-db`.
 
 ## Herramientas y tecnologías usadas
-* Makefile (para generar una interfaz sencilla de procesos)
-* Docker (para generar un container)
-* MySQL (Motor de bases de datos `version: latest`)
-* MySQL Workbench (Interfaz gráfica)
+* Makefile (para generar una interfaz sencilla de procesos).
+* Docker (para generar un container).
+* MySQL (Motor de bases de datos `version: latest`).
+* MySQL Workbench (Interfaz gráfica).
 
 ## Como levantar el proyecto en CodeSpaces GitHub
-* env: Archivo con contraseñas y data secretas
-* Makefile: Abstracción de creacción del proyecto
-* docker-compose.yml: Permite generar las bases de datos en forma de contenedores
+* env: Archivo con contraseñas y data secretas.
+* Makefile: Abstracción de creacción del proyecto.
+* docker-compose.yml: Permite generar las bases de datos en forma de contenedores.
 
 #### Pasos para arrancar el proyecto
 
 * En la terminal de linux escribir :
     - `make` _si te da un error de que no conexion al socket, volver al correr el comando `make`_
-    - `make clean-db` para limpiar la base de datos
-    - `make test-db` para mirar los datos de cada tabla
-    - `make backup-db` para realizar un backup de mi base de datos
-    - `make access-db` para acceder a la base de datos mediante un instancia de terminal de mysql
+    - `make clean-db` para limpiar la base de datos.
+    - `make test-db` para mirar los datos de cada tabla.
+    - `make backup-db` para realizar un backup de la base de datos.
+    - `make access-db` para acceder a la base de datos mediante un instancia de terminal de mysql.
