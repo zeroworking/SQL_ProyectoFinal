@@ -94,14 +94,14 @@ Desarrollo de un sistema gestor de reservas de habitaciones de moteles mediante 
 
 ### Vista: ClientesDeCumpleañosMesActual
 
-**Descripción:** Listado de clientes vigentes que se encuentran de cumpleaños en el mes en curso.
+**Descripción:** Listado de clientes con estado "vigente" que se encuentran de cumpleaños en el mes en curso.
 
 **Columnas:**
 
 * **NOMBRE:** Nombre del cliente
 * **EMAIL:** Email del cliente
 * **FECHANACIMIENTO:** Fecha de nacimiento del cliente
-* **DESCRIPCION:** Estado del cliente (solo clientes activos)
+* **DESCRIPCION:** Estado del cliente
 
 **Ejemplo de consulta:**
 
@@ -111,7 +111,7 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 
 ### Vista: ClientesTopReservasAnual 
 
-**Descripción:** Listado de 3 clientes con mayor cantidad de reservaciones en el año en cualquiera de los moteles del sistema.
+**Descripción:** Listado de 3 clientes con estado "vigente" con mayor cantidad de reservaciones en el año en cualquiera de los moteles.
 
 **Columnas:**
 
@@ -119,7 +119,7 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 * **NUMEROVISITAS:** Número de visitas del cliente en el año
 * **NOMBRE:** Nombre del cliente
 * **EMAIL:** Email del cliente
-* **DESCRIPCION:** Estado del cliente (solo clientes activos)
+* **DESCRIPCION:** Estado del cliente
 
 **Ejemplo de consulta:**
 
@@ -165,7 +165,7 @@ SELECT * FROM ReservasPagadasConWebPay;
 
 ### Vista: ListadoDeClientesPorComuna
 
-**Descripción:** Listado de clientes por comuna (solo clientes activos).
+**Descripción:** Listado de clientes con estado "vigente" por comuna.
 
 **Columnas:**
 
