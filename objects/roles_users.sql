@@ -48,4 +48,4 @@ GRANT ALL PRIVILEGES ON HABITACIONVALORES TO role_crud_motelapp;
 GRANT role_select_motelapp TO 'usuario_select'@'%';
 GRANT role_crud_motelapp TO 'usuario_crud'@'%';
 
-FLUSH PRIVILEGES;make
+FLUSH PRIVILEGES;
