@@ -163,6 +163,22 @@ SELECT * FROM ReservasPagadasConTransferencia;
 SELECT * FROM ReservasPagadasConWebPay;
 ```
 
+### Vista: ListadoDeClientesPorComuna
+
+**Descripción:** Listado de clientes por comuna (solo clientes activos).
+
+**Columnas:**
+
+* **NOMBRE_CLIENTE:** Nombre del cliente
+* **EMAIL:** Email del cliente
+* **DESCRIPCION:** Estado del cliente
+* **NOMBRE_COMUNA:** Nombre de la comuna de residencia del cliente
+
+**Ejemplo de consulta:**
+
+```sql
+SELECT * FROM ListadoDeClientesPorComuna;
+```
 
 
 
