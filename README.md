@@ -127,6 +127,49 @@ SELECT * FROM ClientesDeCumpleanosMesActual;
 SELECT * FROM ClientesTopReservasAnual;
 ```
 
+### Vista: ReservasPagadasConTransferencia
+
+**Descripción:** Listado y detalle de reservas pagadas con transferencia electrónica.
+
+**Columnas:**
+
+* **DESCRIPCION:** Descripción del medio de pago
+* **FECHAPAGO:** Fecha de realización del pago
+* **NUMBOLETA:** Número de la boleta
+* **ID_RESERVA:** Identificador de la reserva
+* **VALORRESERVA:** Valor pagado por la reserva
+
+**Ejemplo de consulta:**
+
+```sql
+SELECT * FROM ReservasPagadasConTransferencia;
+```
+
+### Vista: ReservasPagadasConWebPay
+
+**Descripción:** Listado y detalle de reservas pagadas con webpay.
+
+**Columnas:**
+
+* **DESCRIPCION:** Descripción del medio de pago
+* **FECHAPAGO:** Fecha de realización del pago
+* **NUMBOLETA:** Número de la boleta
+* **ID_RESERVA:** Identificador de la reserva
+* **VALORRESERVA:** Valor pagado por la reserva
+
+**Ejemplo de consulta:**
+
+```sql
+SELECT * FROM ReservasPagadasConWebPay;
+```
+
+
+
+
+
+
+
+
 ## Documentación de Funciones
 
 ### Función: TotalPagosCliente
