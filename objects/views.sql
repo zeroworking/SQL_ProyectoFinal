@@ -40,4 +40,46 @@ ORDER BY
 LIMIT 3);
 
 
+-- VISTA 3 RESERVAS PAGADAS CON TRANSFERENCIA ELECTRONICA
+CREATE OR REPLACE VIEW ReservasPagadasConTransferencia AS
+(SELECT
+	mediodepago.DESCRIPCION, 
+	pago.FECHAPAGO, 
+	pago.NUMBOLETA, 
+	reserva.ID_RESERVA, 
+	reserva.VALORRESERVA
+FROM
+	pago
+	INNER JOIN
+	mediodepago
+	ON 
+		pago.ID_MEDIODEPAGO = mediodepago.ID_MEDIODEPAGO
+	INNER JOIN
+	reserva
+	ON 
+		pago.ID_RESERVA = reserva.ID_RESERVA
+WHERE
+	mediodepago.ID_MEDIODEPAGO = 1);
 
+
+
+-- VISTA 4 RESERVAS PAGADAS CON WEBPAY
+CREATE OR REPLACE VIEW ReservasPagadasConTransferencia AS
+(SELECT
+	mediodepago.DESCRIPCION, 
+	pago.FECHAPAGO, 
+	pago.NUMBOLETA, 
+	reserva.ID_RESERVA, 
+	reserva.VALORRESERVA
+FROM
+	pago
+	INNER JOIN
+	mediodepago
+	ON 
+		pago.ID_MEDIODEPAGO = mediodepago.ID_MEDIODEPAGO
+	INNER JOIN
+	reserva
+	ON 
+		pago.ID_RESERVA = reserva.ID_RESERVA
+WHERE
+	mediodepago.ID_MEDIODEPAGO = 2);
