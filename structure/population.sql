@@ -5,6 +5,42 @@ INSERT INTO MEDIODEPAGO
 (1, 'Transferencia'),
 (2, 'Webpay');
 
+INSERT INTO COMUNAS
+(ID_COMUNA, NOMBRE) VALUES 
+(1, 'Cerrillos'),
+(2, 'Cerro Navia'),
+(3, 'Conchalí'),
+(4, 'El Bosque'),
+(5, 'Estación Central'),
+(6, 'Huechuraba'),
+(7, 'Independencia'),
+(8, 'La Cisterna'),
+(9, 'La Florida'),
+(10, 'La Pintana'),
+(11, 'La Granja'),
+(12, 'La Reina'),
+(13, 'Las Condes'),
+(14, 'Lo Barnechea'),
+(15, 'Lo Espejo'),
+(16, 'Lo Prado'),
+(17, 'Macul'),
+(18, 'Maipú'),
+(19, 'Ñuñoa'),
+(20, 'Pedro Aguirre Cerda'),
+(21, 'Peñalolen'),
+(22, 'Providencia'),
+(23, 'Pudahuel'),
+(24, 'Quilicura'),
+(25, 'Quinta Normal'),
+(26, 'Recoleta'),
+(27, 'Renca'),
+(28, 'San Miguel'),
+(29, 'San Joaquín'),
+(30, 'San Ramón'),
+(31, 'Santiago'),
+(32, 'Vitacura');
+
+
 INSERT INTO DUENO
 (ID_DUENO, NOMBRE, EMAIL, TELEFONO) VALUES
 ('15467731','JORGE','JORGE@MOTELAPP.CL','962361668'),
@@ -29,27 +65,27 @@ INSERT INTO DUENO
 ('15467750','ANGEL','ANGEL@MOTELAPP.CL','962361668');
 
 INSERT INTO MOTEL
-(ID_MOTEL, NOMBRE, DIRECCION, TELEFONO,ID_DUENO) VALUES
-('MOTEL001', 'El Oasis', 'Avenida Providencia 1234 - Providencia', '220594837','15467731'),
-('MOTEL002', 'Luna de Miel', 'Calle Las Condes 5678 - Las Condes', '221308495','15467732'),
-('MOTEL003', 'El Refugio', 'Pasaje Ñuñoa 910 - Ñuñoa', '220976354','15467733'),
-('MOTEL004', 'Paraíso Secreto', 'Avenida La Florida 246 - La Florida', '220158473','15467734'),
-('MOTEL005', 'La Cabaña', 'Calle Maipú 3456 - Maipú', '222057139','15467735'),
-('MOTEL006', 'El Escondite', 'Avenida Pedro de Valdivia 789 - Ñuñoa', '223098457','15467736'),
-('MOTEL007', 'Noches de Pasión', 'Pasaje Bellavista 123 - Recoleta', '220635984','15467737'),
-('MOTEL008', 'El Rincón del Amor', 'Calle San Miguel 456 - San Miguel', '222670943','15467738'),
-('MOTEL009', 'Sueños Prohibidos', 'Avenida Kennedy 7890 - Las Condes', '221840795','15467739'),
-('MOTEL010', 'La Posada Romántica', 'Pasaje Puente Alto 321 - Puente Alto', '222405198','15467740'),
-('MOTEL011', 'El Encuentro', 'Calle Peñalolén 567 - Peñalolén', '223705819','15467741'),
-('MOTEL012', 'El Jardín del Deseo', 'Avenida Colina 890 - Colina', '220974531','15467742'),
-('MOTEL013', 'El Mirador', 'Pasaje Providencia 234 - Providencia', '223564098','15467743'),
-('MOTEL014', 'Amorío Hotel', 'Calle La Cisterna 678 - La Cisterna', '222630185','15467744'),
-('MOTEL015', 'La Morada Intima', 'Avenida Vitacura 9012 - Vitacura', '221783095','15467745'),
-('MOTEL016', 'El Refugio del Amante', 'Pasaje Macul 345 - Macul', '222407518','15467746'),
-('MOTEL017', 'El Paraíso del Romance', 'Calle La Reina 6789 - La Reina', '220183947','15467747'),
-('MOTEL018', 'La Guarida del Amor', 'Avenida San Bernardo 1234 - San Bernardo', '223890745','15467748'),
-('MOTEL019', 'El Cielo en la Tierra', 'Pasaje Pudahuel 567 - Pudahuel', '221057634','15467749'),
-('MOTEL020', 'La Estancia del Placer', 'Calle La Pintana 890 - La Pintana', '222306579','15467750');
+(ID_MOTEL, NOMBRE, DIRECCION, TELEFONO,ID_DUENO,ID_COMUNA) VALUES
+('MOTEL001', 'El Oasis', 'Avenida Providencia 1234 - Providencia', '220594837','15467731', 31),
+('MOTEL002', 'Luna de Miel', 'Calle Las Condes 5678 - Las Condes', '221308495','15467732', 18),
+('MOTEL003', 'El Refugio', 'Pasaje Ñuñoa 910 - Ñuñoa', '220976354','15467733', 32),
+('MOTEL004', 'Paraíso Secreto', 'Avenida La Florida 246 - La Florida', '220158473','15467734', 21),
+('MOTEL005', 'La Cabaña', 'Calle Maipú 3456 - Maipú', '222057139','15467735', 32),
+('MOTEL006', 'El Escondite', 'Avenida Pedro de Valdivia 789 - Ñuñoa', '223098457','15467736', 18),
+('MOTEL007', 'Noches de Pasión', 'Pasaje Bellavista 123 - Recoleta', '220635984','15467737', 21),
+('MOTEL008', 'El Rincón del Amor', 'Calle San Miguel 456 - San Miguel', '222670943','15467738', 11),
+('MOTEL009', 'Sueños Prohibidos', 'Avenida Kennedy 7890 - Las Condes', '221840795','15467739', 22),
+('MOTEL010', 'La Posada Romántica', 'Pasaje Puente Alto 321 - Puente Alto', '222405198','15467740', 31),
+('MOTEL011', 'El Encuentro', 'Calle Peñalolén 567 - Peñalolén', '223705819','15467741', 22),
+('MOTEL012', 'El Jardín del Deseo', 'Avenida Colina 890 - Colina', '220974531','15467742', 18),
+('MOTEL013', 'El Mirador', 'Pasaje Providencia 234 - Providencia', '223564098','15467743', 22),
+('MOTEL014', 'Amorío Hotel', 'Calle La Cisterna 678 - La Cisterna', '222630185','15467744', 31),
+('MOTEL015', 'La Morada Intima', 'Avenida Vitacura 9012 - Vitacura', '221783095','15467745', 31),
+('MOTEL016', 'El Refugio del Amante', 'Pasaje Macul 345 - Macul', '222407518','15467746', 9),
+('MOTEL017', 'El Paraíso del Romance', 'Calle La Reina 6789 - La Reina', '220183947','15467747', 18),
+('MOTEL018', 'La Guarida del Amor', 'Avenida San Bernardo 1234 - San Bernardo', '223890745','15467748', 11),
+('MOTEL019', 'El Cielo en la Tierra', 'Pasaje Pudahuel 567 - Pudahuel', '221057634','15467749', 9),
+('MOTEL020', 'La Estancia del Placer', 'Calle La Pintana 890 - La Pintana', '222306579','15467750', 9);
 
 INSERT INTO EMPLEADO
 (ID_EMPLEADO, NOMBRE, ID_MOTEL) VALUES
@@ -160,37 +196,37 @@ INSERT INTO CLIENTEESTADO
 (2,'Bloqueado');
 
 INSERT INTO CLIENTE
-(ID_CLIENTE, NOMBRE, EMAIL, TELEFONO, FECHANACIMIENTO, ID_CLIENTEESTADO) VALUES
-('CLI001', 'Juan Perez', 'juan.perez@example.com', '990123456', '1975-08-25', 1),
-('CLI002', 'Maria Lopez', 'maria.lopez@example.com', '990234567', '1976-12-13', 1),
-('CLI003', 'Pedro Rodriguez', 'pedro.rodriguez@example.com', '990345678', '1977-09-03', 1),
-('CLI004', 'Ana Martinez', 'ana.martinez@example.com', '990456789', '1979-02-14', 1),
-('CLI005', 'Luisa Sanchez', 'luisa.sanchez@example.com', '990567890', '1980-09-22', 1),
-('CLI006', 'Carlos Gomez', 'carlos.gomez@example.com', '990678901', '1981-06-15', 1),
-('CLI007', 'Laura Fernandez', 'laura.fernandez@example.com', '990789012', '1982-08-31', 1),
-('CLI008', 'Javier Ramirez', 'javier.ramirez@example.com', '990890123', '1982-10-03', 1),
-('CLI009', 'Sofia Alonso', 'sofia.alonso@example.com', '990901234', '1983-05-18', 1),
-('CLI010', 'Diego Herrera', 'diego.herrera@example.com', '990012345', '1983-12-30', 1),
-('CLI011', 'Elena Castro', 'elena.castro@example.com', '990123406', '1984-07-19', 1),
-('CLI012', 'Manuel Rubio', 'manuel.rubio@example.com', '990234067', '1984-09-22', 1),
-('CLI013', 'Carmen Jimenez', 'carmen.jimenez@example.com', '990345078', '1985-10-20', 1),
-('CLI014', 'Pablo Diaz', 'pablo.diaz@example.com', '990456089', '1986-04-26', 1),
-('CLI015', 'Rocio Navarro', 'rocio.navarro@example.com', '990567190', '1986-11-07', 1),
-('CLI016', 'Gonzalo Herrera', 'gonzalo.herrera@example.com', '990678201', '1987-11-11', 1),
-('CLI017', 'Raquel Gomez', 'raquel.gomez@example.com', '990789312', '1988-03-12', 1),
-('CLI018', 'Alberto Ruiz', 'alberto.ruiz@example.com', '990890423', '1988-07-14', 1),
-('CLI019', 'Julia Torres', 'julia.torres@example.com', '990901534', '1989-03-07', 1),
-('CLI020', 'Santiago Serrano', 'santiago.serrano@example.com', '990012645', '1990-02-15', 1),
-('CLI021', 'Eva Martin', 'eva.martin@example.com', '990123756', '1990-09-08', 1),
-('CLI022', 'Daniel Garcia', 'daniel.garcia@example.com', '990234867', '1991-10-03', 1),
-('CLI023', 'Patricia Moreno', 'patricia.moreno@example.com', '990345978', '1992-07-08', 1),
-('CLI024', 'Roberto Herrera', 'roberto.herrera@example.com', '990456089', '1993-06-28', 1),
-('CLI025', 'Beatriz Alvarez', 'beatriz.alvarez@example.com', '990567190', '1994-09-08', 1),
-('CLI026', 'Marcos Sanchez', 'marcos.sanchez@example.com', '990678201', '1995-04-17', 1),
-('CLI027', 'Natalia Jimenez', 'natalia.jimenez@example.com', '990789312', '1996-11-24', 1),
-('CLI028', 'Jorge Lopez', 'jorge.lopez@example.com', '990890423', '1997-08-02', 1),
-('CLI029', 'Adriana Gomez', 'adriana.gomez@example.com', '990901534', '1998-01-05', 1),
-('CLI030', 'Hector Martinez', 'hector.martinez@example.com', '990012645', '1999-04-05', 1);
+(ID_CLIENTE, NOMBRE, EMAIL, TELEFONO, FECHANACIMIENTO, ID_CLIENTEESTADO, ID_COMUNA) VALUES
+('CLI001', 'Juan Perez', 'juan.perez@example.com', '990123456', '1975-08-25', 1, 1),
+('CLI002', 'Maria Lopez', 'maria.lopez@example.com', '990234567', '1976-12-13', 1, 1),
+('CLI003', 'Pedro Rodriguez', 'pedro.rodriguez@example.com', '990345678', '1977-09-03', 1, 1),
+('CLI004', 'Ana Martinez', 'ana.martinez@example.com', '990456789', '1979-02-14', 1, 1),
+('CLI005', 'Luisa Sanchez', 'luisa.sanchez@example.com', '990567890', '1980-09-22', 1, 1),
+('CLI006', 'Carlos Gomez', 'carlos.gomez@example.com', '990678901', '1981-06-15', 1, 1),
+('CLI007', 'Laura Fernandez', 'laura.fernandez@example.com', '990789012', '1982-08-31', 1, 1),
+('CLI008', 'Javier Ramirez', 'javier.ramirez@example.com', '990890123', '1982-10-03', 1, 1),
+('CLI009', 'Sofia Alonso', 'sofia.alonso@example.com', '990901234', '1983-05-18', 1, 1),
+('CLI010', 'Diego Herrera', 'diego.herrera@example.com', '990012345', '1983-12-30', 1, 1),
+('CLI011', 'Elena Castro', 'elena.castro@example.com', '990123406', '1984-07-19', 1, 1),
+('CLI012', 'Manuel Rubio', 'manuel.rubio@example.com', '990234067', '1984-09-22', 1, 1),
+('CLI013', 'Carmen Jimenez', 'carmen.jimenez@example.com', '990345078', '1985-10-20', 1, 1),
+('CLI014', 'Pablo Diaz', 'pablo.diaz@example.com', '990456089', '1986-04-26', 1, 1),
+('CLI015', 'Rocio Navarro', 'rocio.navarro@example.com', '990567190', '1986-11-07', 1, 1),
+('CLI016', 'Gonzalo Herrera', 'gonzalo.herrera@example.com', '990678201', '1987-11-11', 1, 1),
+('CLI017', 'Raquel Gomez', 'raquel.gomez@example.com', '990789312', '1988-03-12', 1, 1),
+('CLI018', 'Alberto Ruiz', 'alberto.ruiz@example.com', '990890423', '1988-07-14', 1, 1),
+('CLI019', 'Julia Torres', 'julia.torres@example.com', '990901534', '1989-03-07', 1, 1),
+('CLI020', 'Santiago Serrano', 'santiago.serrano@example.com', '990012645', '1990-02-15', 1, 1),
+('CLI021', 'Eva Martin', 'eva.martin@example.com', '990123756', '1990-09-08', 1, 1),
+('CLI022', 'Daniel Garcia', 'daniel.garcia@example.com', '990234867', '1991-10-03', 1, 1),
+('CLI023', 'Patricia Moreno', 'patricia.moreno@example.com', '990345978', '1992-07-08', 1, 1),
+('CLI024', 'Roberto Herrera', 'roberto.herrera@example.com', '990456089', '1993-06-28', 1, 1),
+('CLI025', 'Beatriz Alvarez', 'beatriz.alvarez@example.com', '990567190', '1994-09-08', 1, 1),
+('CLI026', 'Marcos Sanchez', 'marcos.sanchez@example.com', '990678201', '1995-04-17', 1, 1),
+('CLI027', 'Natalia Jimenez', 'natalia.jimenez@example.com', '990789312', '1996-11-24', 1, 1),
+('CLI028', 'Jorge Lopez', 'jorge.lopez@example.com', '990890423', '1997-08-02', 1, 1),
+('CLI029', 'Adriana Gomez', 'adriana.gomez@example.com', '990901534', '1998-01-05', 1, 1),
+('CLI030', 'Hector Martinez', 'hector.martinez@example.com', '990012645', '1999-04-05', 1, 1);
 
 INSERT INTO TIEMPORESERVA
 (ID_TIEMPORESERVA, DESCRIPCION) VALUES
