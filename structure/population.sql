@@ -43,26 +43,26 @@ INSERT INTO COMUNAS
 
 INSERT INTO DUENO
 (ID_DUENO, NOMBRE, EMAIL, TELEFONO) VALUES
-('15467731','JORGE','JORGE@MOTELAPP.CL','962361668'),
-('15467732','PEDRO','PEDRO@MOTELAPP.CL','962361668'),
-('15467733','JUAN','JUAN@MOTELAPP.CL','962361668'),
-('15467734','JOSE','JOSE@MOTELAPP.CL','962361668'),
-('15467735','MARIA','MARIA@MOTELAPP.CL','962361668'),
-('15467736','PATRICIA','PATRICIA@MOTELAPP.CL','962361668'),
-('15467737','RENE','RENE@MOTELAPP.CL','962361668'),
-('15467738','JUANA','JUANA@MOTELAPP.CL','962361668'),
-('15467739','OSVALDO','OSVALDO@MOTELAPP.CL','962361668'),
-('15467740','CARLOS','CARLOS@MOTELAPP.CL','962361668'),
-('15467741','RODRIGO','RODRIGO@MOTELAPP.CL','962361668'),
-('15467742','CARMEN','CARMEN@MOTELAPP.CL','962361668'),
-('15467743','ROSA','ROSA@MOTELAPP.CL','962361668'),
-('15467744','CARLA','CARLA@MOTELAPP.CL','962361668'),
-('15467745','CATALINA','CATALINA@MOTELAPP.CL','962361668'),
-('15467746','ANTONIO','ANTONIO@MOTELAPP.CL','962361668'),
-('15467747','GABRIEL','GABRIEL@MOTELAPP.CL','962361668'),
-('15467748','LUZ','LUZ@MOTELAPP.CL','962361668'),
-('15467749','RICARDO','RICARDO@MOTELAPP.CL','962361668'),
-('15467750','ANGEL','ANGEL@MOTELAPP.CL','962361668');
+('15467731','Jorge Lagos','jorge@motelapp.cl','962361668'),
+('15467732','Pedro Piedra','pedro@motelapp.cl','962361668'),
+('15467733','Juan Perez','juan@motelapp.cl','962361668'),
+('15467734','José Miranda','jose@motelapp.cl','962361668'),
+('15467735','María Arcos','maria@motelapp.cl','962361668'),
+('15467736','Patricia Rivas','patricia@motelapp.cl','962361668'),
+('15467737','Rene Castillo','rene@motelapp.cl','962361668'),
+('15467738','Juana Galvez','juana@motelapp.cl','962361668'),
+('15467739','Osvaldo Soto','osvaldo@motelapp.cl','962361668'),
+('15467740','Carlos Ramirez','carlos@motelapp.cl','962361668'),
+('15467741','Rodrigo Marin','rodrigo@motelapp.cl','962361668'),
+('15467742','Carmen Novoa','carmen@motelapp.cl','962361668'),
+('15467743','Rosa Fierro','rosa@motelapp.cl','962361668'),
+('15467744','Carla Jara','carla@motelapp.cl','962361668'),
+('15467745','Catalina Echeverria','catalina@motelapp.cl','962361668'),
+('15467746','Antonio Aguero','antonio@motelapp.cl','962361668'),
+('15467747','Gabriel Sanderson','gabriel@motelapp.cl','962361668'),
+('15467748','Luz Casal','luz@motelapp.cl','962361668'),
+('15467749','Ricardo Montaner','ricardo@motelapp.cl','962361668'),
+('15467750','Angel Di Maria','angel@motelapp.cl','962361668');
 
 INSERT INTO MOTEL
 (ID_MOTEL, NOMBRE, DIRECCION, TELEFONO,ID_DUENO,ID_COMUNA) VALUES
